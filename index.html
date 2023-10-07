@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon &middot;</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Coming Soon</h1>
+        <div class="hr"> <div></div> </div>
+        <div class="icon">
+            <img src="./gear.png" alt="" class="l-gear gear">
+            <img src="./gear.png" alt="" class="r-gear gear">
+        </div>    
+        <div class="footer">
+            &copy; <span id="id_year" class="year"></span>
+        </div>
+    </div>
+    <script>
+        let $year = document.getElementById("id_year");
+        $year.innerText = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>

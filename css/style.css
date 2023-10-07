@@ -1,0 +1,113 @@
+body{
+    background-color: #23492c;
+}
+.main{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background: #23492c;
+}
+.main h1{
+    width :100%;
+    text-align:center;;
+}
+.main h1{
+    font-size: 2rem;
+}
+.main .hr{
+    display:flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    width: 100%;
+    text-align:center;
+}
+.main .hr div{
+    width: 80%;
+    height:1px;
+    border: 1.5px #fff solid;
+}
+.main .icon{
+    display:flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin-top: 20vh;
+}
+.main .icon .gear{
+    width: 100px;
+}
+
+@keyframes clockwise {
+    0% {rotate: 10deg;}
+    100% {rotate: 100deg}
+}
+.main .icon .l-gear{
+    margin-right: -9px;
+    animation-name: clockwise;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: clockwise;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+.main .icon .r-gear{
+    margin-left: -9px;
+    animation-name: clockwise;
+    animation-duration: 2.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    -webkit-animation-name: clockwise;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: reverse;
+}
+.main .footer{
+    margin-top:30vh;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+@media screen and (min-width:1025px) {    
+    .main h1{
+        font-size: 3rem;
+    }   
+    .main .icon .gear{
+        width: 125px;
+    }
+    .main .icon .l-gear{
+        margin-right: -10px;
+        animation-name: clockwise;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: clockwise;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+    }
+    .main .icon .r-gear{
+        margin-left: -10px;
+        animation-name: clockwise;
+        animation-duration: 2.1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        -webkit-animation-name: clockwise;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: reverse;
+    }
+    .main .footer{
+        margin-top: 30vh;
+        font-size: 1.15rem;
+        font-weight: 600;
+    }
+
+}
